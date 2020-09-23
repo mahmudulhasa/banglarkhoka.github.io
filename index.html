@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>calculator</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style type="text/css">
+div {
+   
+   display: none;
+   
+}
+:target{
+   display: block;
+}
+html:active{
+	background-color: deepskyblue;
+	}
+	* {
+	box-sizing:border=box;
+	padding:autopx;
+	margin:5px;
+	}
+	body {
+	background-color:forestgreen;
+	}
+	#ra {
+	background-color:black;
+	padding:15px;
+	border-radius:20px;
+	width:300px;
+	height:400px;
+	align-items:center;
+	align-self:center;
+	}
+	input[type=text] {
+	background-color:royekblue;
+	border-radius:8px;
+	margin-top:autopx;
+	font-size:20px;
+	color:blue ;
+	width :250px;
+	height:40px;
+	text-align:center;
+	border:4px double red;
+	}
+	input[type=button] {
+	background-color:green;
+	width :300px
+	height :500px
+	color:blue;
+	font-size:25px;
+	margin-top:8px;
+	margin-bottom:autopx;
+	padding:autopx;
+	text-align:center;
+	border:3px dotted aquamarine;
+	
+	}
+	input:hover {
+	background-color:blueviolet;
+	}
+	
+
+#wel {
+
+text-align: center;
+color:darkgoldenrod;
+border: cornsilk 3px solid ;
+}
+c5 {
+
+color: crimson;
+</style>
+
+	
+	</head>
+<body><center>
+	<a href="#ra" >calculator</a>
+	<a href="#you">close</a>
+	<div id="you">
+	<input type="text" style ="display:none;" value="your results is :" class="hm" >
+	
+ 	<marquee style="text-align:center;" ><p style ="background-color: white ;">Developed by mahmudul hasan</p></marquee>
+	</div>
+	
+	
+	<div id ="ra">
+	<form name="mh" id="r4">
+	<input type="text" name="hm" class="hm"  >
+	<br>
+
+	<input type="button"   value="7" onclick="mh.hm.value+='7'" >
+	<input type="button" value="8" onclick="mh.hm.value+='8'" >
+	<input type="button" value="9" onclick="mh.hm.value+='9'" >
+	<input type="button" value=" / " onclick="mh.hm.value+='/'" >
+	
+	<br>
+	<input type="button" value="4" onclick="mh.hm.value+='4'" >
+	<input type="button" value="5" onclick="mh.hm.value+='5'" >
+	<input type="button" value="6" onclick="mh.hm.value+='6'" >
+	<input type="button" value=" + " onclick="mh.hm.value+='+'" >
+	
+	<br>
+	<input type="button" value="1" onclick="mh.hm.value+='1'" >
+	<input type="button" value="2" onclick="mh.hm.value+='2'" >
+	<input type="button" value="3" onclick="mh.hm.value+='3'" >
+	<input type="button" value=" * " onclick="mh.hm.value+='*'" >
+	
+	<br>
+	<input type="button" value=" 0" onclick="mh.hm.value+='0'" >
+	<input type="button" value="- " onclick="mh.hm.value+='-'" >
+	<input type="button" value="%" onclick="mh.hm.value+='%'" >
+	<input type="button" value=" . " onclick="mh.hm.value+='.'" >
+	
+	<br>
+	<input type="button" value="( " onclick="mh.hm.value+='('"  >
+	<input type="button" value=") " onclick="mh.hm.value+=')'">
+	<input type="button" value=" r " onclick="mh.hm.value+='3.1416'">
+	<input type="button" value=" e " onclick="mh.hm.value+='2.7183'">
+	<br>
+	<input type="button" value="    delete    " onclick="mh.hm.value=' '">
+	<input type="button"  value="  =  " onclick="mh.hm.value=eval(mh.hm.value)" >
+	<br>
+	<input type="button" value="result" onclick="equal()" >
+	
+	<script type="text/javascript">
+	function equal(){
+	
+	 var equ =document.getElementsByClassName('hm') 
+	alert (equ[0].value)
+	alert (equ[1].value )
+	}
+	
+	</script>
+
+	
+</form>
+</div>
+
+
+</div>
+
+</center>
+</body>
+</html>
